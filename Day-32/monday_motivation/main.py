@@ -11,7 +11,7 @@ if weekday == 0:
         lines = data.readlines()
         quote = random.choice(lines)
 
-# send email
+    # send email
     with smtplib.SMTP("smtp.gmail.com", port=587) as connection:
         connection.starttls()  # security
         connection.login(user=my_email, password=password)
